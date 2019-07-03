@@ -11,7 +11,7 @@
 ******************************************************************/
 
 module DataMemory 
-#(	parameter DATA_WIDTH=8,
+#(	parameter DATA_WIDTH=32, //extended from 8 to 32 for alu processing
 	parameter MEMORY_DEPTH = 1024
 
 )
