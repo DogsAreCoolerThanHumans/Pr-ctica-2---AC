@@ -26,7 +26,8 @@ DUV
 	.clk(clk),
 	.reset(reset),
 	.ALUResultOut(ALUResultOut),
-	.PortOut(PortOut)
+	.PortOut(PortOut),
+	//.PortIn(PortIn) necesario?
 
 );
 /*********************************************************/
@@ -46,3 +47,4 @@ end
 /*********************************************************/
 
 endmodule
+//testbech//

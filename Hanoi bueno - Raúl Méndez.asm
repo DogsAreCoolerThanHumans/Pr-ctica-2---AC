@@ -14,21 +14,15 @@
     doneM: .asciiz "\nDone!" 
   
 .text
-  
+  addi $sp,$zero,268505084
     #Addresses shwon on the Data Segment visualizer in MARS
 	addi $a1, $zero, 0x10010000	#Origin or A tower
 	addi $a2, $zero, 0x10010020	#Auxiliar or B tower
     addi $a3, $zero, 0x10010040	#Destiny or C tower
 	
-    #Read n value from user
-    li $v0, 4 #4 signals printing
-    la $a0, promptM #Prints "prompt" var in data (message)
-    syscall #Console call
+    
 
-    li $v0, 5 #5 signals reading keyboard input
-    syscall
-
-    add $s0, $v0, $zero    #Stores input in s0: s0 = n 
+    addi $s0, $zero, 3    #Stores input in s0: s0 = n 
 	add $t0, $s0, $zero  	#Stores s0 in t0 in order for the functs to work with it (as temp var 0)
 	add $t1, $zero, $zero	#Temporal value	1
 	add $t2, $zero, $zero 	#Temporal value 2

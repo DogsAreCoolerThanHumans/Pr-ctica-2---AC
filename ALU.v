@@ -31,7 +31,7 @@ module ALU
 localparam ADD = 4'b0011; //clase
 localparam SUB = 4'b0100; //
 
-localparam AND = 4'b0000; //aluoperation codes are user-defined 
+localparam AND = 4'b0000; //aluoperation codes are user-defined  
 localparam OR  = 4'b0001;
 localparam NOR = 4'b0010;
 
@@ -69,7 +69,7 @@ localparam JR  = 4'b1011; //jump register
 			BEQ:
 				ALUResult = A - B; //to figure sign out
 			MEM:
-				ALUResult = (A + B - 268500992) / 4; //for offset: a+b does not fit in 32 bit, modular arithmetic implemented
+				ALUResult = (A + B - 268500992) / 4; //sw/lw: for memory address offset
 		  	JR:
 				ALUResult = A; 
 			

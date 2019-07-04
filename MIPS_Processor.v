@@ -10,7 +10,7 @@
 
 module MIPS_Processor
 #(
-	parameter MEMORY_DEPTH = 32
+	parameter MEMORY_DEPTH = 64 //increased
 )
 
 (
@@ -292,7 +292,7 @@ MUX_ForJump
 	.MUX_Output(MUX_Jump_wire)
 );
 
-DataMemory //aded for new memory mod
+DataMemory //aded for memory mod
 RAM_Memory
 (
 	.WriteData(ReadData2_wire),

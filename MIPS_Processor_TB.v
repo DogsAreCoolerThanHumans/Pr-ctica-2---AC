@@ -27,6 +27,7 @@ DUV
 	.reset(reset),
 	.ALUResultOut(ALUResultOut),
 	.PortOut(PortOut)
+	//.PortIn(PortIn) necesario?
 
 );
 /*********************************************************/
